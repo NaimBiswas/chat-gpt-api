@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "Chat GPT-API",
+    "author":"Naim Biswas",
+    "builds": [
+       { "src": "src/index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "src/index.js" }
+    ]
+ }
