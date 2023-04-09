@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "load": "autocannon http://localhost:3000/api/users -c 10 -d 10 -p 10"
   },
   "keywords": [
     "chat-gpt",
@@ -15,10 +16,15 @@
   "author": "Naim Biswas (Software Developer)",
   "license": "ISC",
   "dependencies": {
+    "autocannon": "^7.10.0",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dns": "^0.2.2",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.0",
-    "nodemon": "^2.0.21"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21",
+    "openai": "^3.2.1"
   }
 }
