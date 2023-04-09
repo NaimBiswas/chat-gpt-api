@@ -2,9 +2,9 @@
     "version": 2,
     "name": "Chat GPT-API",
     "builds": [
-       { "src": "src/index.js", "use": "@vercel/node" }
+       { "src": "app.js", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "src/index.js" }
+       { "src": "/(.*)", "dest": "app.js" }
     ]
  }
